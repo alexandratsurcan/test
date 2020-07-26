@@ -1,0 +1,263 @@
+     body {
+        font-family: 'open sans', sans-serif;
+        color: #000000;
+        font-size: 15px;
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+    }
+    
+    p {
+        line-height: 1.6em;
+    }
+    
+    div {
+        box-sizing: border-box;
+    }
+    
+    .container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+    
+    .header {
+        background: rgba(69, 61, 94, 1);
+        background: -moz-linear-gradient(-45deg, rgba(69, 61, 94, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(69, 61, 94, 1)), color-stop(100%, rgba(0, 0, 0, 1)));
+        background: -webkit-linear-gradient(-45deg, rgba(69, 61, 94, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background: -o-linear-gradient(-45deg, rgba(69, 61, 94, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background: -ms-linear-gradient(-45deg, rgba(69, 61, 94, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        background: linear-gradient(135deg, rgba(69, 61, 94, 1) 0%, rgba(0, 0, 0, 1) 100%);
+        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#453d5e', endColorstr='#000000', GradientType=1);
+        padding-top: 100px;
+        padding-bottom: 225px;
+        color: #fff;
+    }
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .offer {
+        margin-top: 166px;
+        width: 490px;
+    }
+    
+    .title {
+        font-size: 36px;
+    }
+    
+    .title span {
+        color: #48de8e;
+    }
+    
+    .intro {
+        margin-top: 46px;
+        margin-bottom: 46px;
+        width: 380px;
+    }
+    
+    .btn {
+        font-family: 'Montserrat', sans-serif;
+        background: #ed9619;
+        color: #ffffff;
+        border-radius: 100px;
+        display: block;
+        width: 205px;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    .btn:hover {
+        background: #d38515;
+        color: #fff;
+    }
+    
+    .desktop {
+        margin-top: 73px;
+    }
+    
+    .learn {
+        margin-top: 110px;
+        padding-bottom: 120px;
+    }
+    
+    .section-title {
+        font-size: 30px;
+        color: #000000;
+    }
+    
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 70px;
+    }
+    
+    .skill {
+        width: 350px;
+        background: url('../img/icon1.jpg') no-repeat left top;
+        padding-left: 100px;
+    }
+    
+    .skill-title {
+        font-size: 18px;
+    }
+    
+    .skill-free {
+        width: 370px;
+        background: url('../img/icon2.jpg') no-repeat left top;
+    }
+    
+    .skill-change {
+        background: url('../img/icon3.jpg') no-repeat left top;
+    }
+    
+    .mail {
+        background-color: #efecf4;
+        padding-top: 173px;
+        padding-bottom: 190px;
+    }
+    
+    .form {
+        margin-top: 40px;
+    }
+    
+    .input {
+        width: 474px;
+        font-family: 'Open sans', sans-serif;
+        font-size: 15px;
+        border: 1px solid #bfb8d1;
+        border-radius: 100px;
+        height: 54px;
+        padding-left: 38px;
+    }
+    
+    .btn-form {
+        border: 0;
+        cursor: pointer;
+        display: inline;
+        margin-left: 11px;
+    }
+    
+    .footer {
+        padding: 33px 0;
+        background-color: #201b2d;
+    }
+    
+    .credits {
+        font-size: 14px;
+        color: #d4cee3;
+    }
+
+    /*JS*/
+
+    .red {
+        color: red;
+    }
+
+    .animate_animated {
+        opacity: 0;
+    }
+
+
+    /* Responsive */
+
+    /* 992px - 1200px */    
+    @media screen and (max-width: 1200px) {
+        .container {
+            width: 960px;
+        }
+    }
+
+    /* 768px - 992px */    
+    @media screen and (max-width: 992px) {
+        .container {
+            width: 720px;
+        }
+        
+        .logo-container {
+            width: 100%;
+            text-align: center;
+        }
+        .wrapper {
+            flex-direction: column;
+        }
+        .offer {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .offer .title {
+            text-align: center;
+        }
+        .intro {
+            width: 100%;
+            text-align: center;
+        }
+        .btn {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .desktop {
+            display: block;
+            width: 549px;
+            margin: 72px auto;
+        }
+        .skills {
+            flex-direction: column;
+            margin-left: 50px;
+        }
+        .skill {
+            width: auto;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            text-align: center;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .credits {
+            text-align: center;
+        }
+    }
+
+    /* 576px - 768px */    
+    @media screen and (max-width: 768px) {
+        .container {
+            width: 540px;
+        }
+        .desktop {
+            width: 100%;
+        }
+    }
+
+    /* 320px - 576px */    
+    @media screen and (max-width: 576px) {
+        .container {
+            width: 90%;
+        }
+        .input {
+            width: 80%;
+        }
+        .skills {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
